@@ -10,6 +10,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 if(num<100) Console.WriteLine($"В числе {num} третий цифры нет");
 else 
 {
-    while (num>999) num = num / 10;
- Console.WriteLine($"В числе {num} третья цифра {num%10}");
+    int num1=num;
+    while (num1>999) num1 = num1 / 10;
+ Console.WriteLine($"В числе {num} третья цифра {num1%10}");
 }
