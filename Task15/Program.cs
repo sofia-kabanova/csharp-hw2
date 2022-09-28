@@ -7,12 +7,12 @@
 Console.Clear();
 Console.Write("Введите цифру, обозначающую день недели: ");
 int day = Convert.ToInt32(Console.ReadLine());
-if (day >0 && day < 8 )
-{
 bool Weekend(int num)
 {
     return num == 6 || num == 7;
 }
+if (day >0 && day < 8 )
+{
 bool result = Weekend(day); 
 if(result) Console.WriteLine($"{day} - выходной");
 else Console.WriteLine($"{day} - не выходной");
