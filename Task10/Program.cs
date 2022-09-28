@@ -7,17 +7,17 @@
 Console.Clear();
 Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+int Digit(int num)
+    {
+        int firstDigit = num / 10 % 10;
+        return firstDigit;
+    }
 if (number < 99 || number > 999) 
 {
     Console.WriteLine($"{number} не является трехзначным числом, введите трехзначное число");
 }
 else
 {
-    int Digit(int num)
-    {
-        int firstDigit = num / 10 % 10;
-        return firstDigit;
-    }
 int result = Digit(number);
 Console.WriteLine($"{number} -> {result}");
 }
