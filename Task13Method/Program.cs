@@ -7,14 +7,14 @@
 Console.Clear();
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
+int Third (int n)
+    {
+    while (n>999) n = n / 10; 
+    return n;
+    } 
 if(num<100) Console.WriteLine($"В числе {num} третий цифры нет");
 else
 {
-    void Third (int n)
-    {
-    int n1 = n;
-    while (n1>999) n1 = n1 / 10;
-    Console.WriteLine($"В числе {n} третья цифра {n1%10}");
-    }
-    Third (num);
+   int result = Third(num);
+   Console.WriteLine($"В числе {num} третья цифра {num};третья цифра {result % 10}");
 }
