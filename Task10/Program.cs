@@ -9,8 +9,8 @@ Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int Digit(int num)
     {
-        int firstDigit = num / 10 % 10;
-        return firstDigit;
+        int secondDigit = num / 10 % 10;
+        return secondDigit;
     }
 if (number < 99 || number > 999) 
 {
