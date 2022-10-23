@@ -16,5 +16,5 @@ if(num<100) Console.WriteLine($"В числе {num} третий цифры не
 else
 {
    int result = Third(num);
-   Console.WriteLine($"В числе {num} третья цифра {num};третья цифра {result % 10}");
+   Console.WriteLine($"В числе {num} третья цифра {result % 10}");
 }
